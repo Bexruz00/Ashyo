@@ -5,7 +5,8 @@
     "contacts": "Связь",
     "tashkent": "Ташкент"
   },
-  "HeaderSearchContent": {
-    "category": "Котегория"
+  "HeaderCenterContent": {
+    "category": "Котегория",
+    "inputPlaceholder":"Что Вы ищете?"
   }
 }

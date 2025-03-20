@@ -1,29 +1,23 @@
-import Button from "@/components/Button";
-import { Link } from "@/i18n/navigation";
-import { ArrowDownIcon, CompareIcon } from "@/icons";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
-import React from "react";
+"use client"
+import { ArrowDownIcon, SearchIcon } from '@/icons'
+import Button from '@/components/Button'
+import Input from '@/components/Input'
+import { Context } from '@/context/context'
+import { useTranslations } from 'next-intl'
+import React, { FC, useContext } from 'react'
 
-const HeaderSearch = () => {
-  const t = useTranslations("HeaderSearchContent");
+const HeaderSearch:FC<{isMobile?:boolean}> = ({isMobile}) => {
+    const t = useTranslations("HeaderCenterContent")
+    const {setOpenCategory, openCategory} = useContext(Context)
   return (
-    <div className="containers">
-      <Link className="flex items-center gap-[1px]" href={"/"}>
-        <Image className="w-[48px] scale-[1.5] h-[48px]" src={"/logo.svg"} alt="Logo" width={48} height={48} priority />
-        <strong className="text-[36px] font-black text-[#134E9B] leading-[100%]"> Ashyo </strong>
-      </Link>
-      <div>
-        <Button>
-          <span>{t("category")}</span>
-          <ArrowDownIcon />
-        </Button>
-        <Button bage={2} exrtaClass="!w-[50px] !h-[50px] !p-0 !bg-[#EBEFF3]">
-          <CompareIcon />
-        </Button>
-      </div>
+    <div className={`flex gap-[5px] sm:gap-[10px] ${isMobile ? "hidden-searchbar" :""}`}>
+        <Button onBlur={() => setOpenCategory(false)} onClick={() => setOpenCategory(!openCategory)} extraClass='!w-[35%] !h-[40px] sm:!w-[160px] sm:!h-[47px]' icon={<ArrowDownIcon extrClass={`${openCategory && "rotate-[180deg]"}`}/>} iconPosition={"right"}>{t("category")}</Button>
+        <div className={`relative ${!isMobile && "w-[65%] sm:w-full"}`}>
+            <Input extraClass={`${!isMobile && "!w-full"}`} placeholder={t("inputPlaceholder")} type='text' name='search'/>
+            <Button extraClass='!absolute top-0 right-0 !w-[40px] !h-[40px] sm:!h-[48px] sm:!w-[60px] !p-0'> <SearchIcon extraClass='w-[16px] h-[16px] sm:w-[20px] sm:h-[20px]'/> </Button>
+        </div>
     </div>
-  );
-};
+  )
+}
 
-export default HeaderSearch;
+export default HeaderSearch

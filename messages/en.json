@@ -5,7 +5,8 @@
     "contacts": "Contacts",
     "tashkent": "Tashkent"
   },
-  "HeaderSearchContent": {
-    "category": "Category"
+  "HeaderCenterContent": {
+    "category": "Category",
+    "inputPlaceholder":"What are you looking for?"
   }
 }

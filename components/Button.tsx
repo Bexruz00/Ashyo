@@ -1,10 +1,10 @@
-import { ButtonType } from '@/types/HeaderType'
+import { ButtonType } from '@/types/ButtonType'
 import React, { FC } from 'react'
 
-const Button:FC<ButtonType> = ({exrtaClass, children, icon, iconPosition, onclick, bage}) => {
+const Button:FC<ButtonType> = ({extraClass, children, icon, iconPosition, onClick, bage, onBlur}) => {
   
   return (
-    <button onClick={onclick} className={`relative py-[14px] px-[25px] bg-[#134E9B] rounded-[6px] text-[16px] text-white font-semibold flex items-center justify-center gap-[20px] ${exrtaClass}`}>
+    <button onBlur={onBlur} onClick={onClick} className={`relative py-[14px] px-[25px] bg-[#134E9B] rounded-[6px] text-[16px] text-white font-semibold flex items-center justify-center gap-[20px] ${extraClass}`}>
       {iconPosition === "left" && icon}
       {children}
       {iconPosition === "right" && icon}

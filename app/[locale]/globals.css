@@ -43,7 +43,7 @@
 
 *{
   box-sizing: border-box;
-  font-family: 'Roboto';
+  font-family: "Roboto", sans-serif;
 }
 
 .containers{
@@ -53,3 +53,17 @@
   padding: 0 20px;
 }
 
+/* Header SearchBar Media */
+@media (max-width:1139px){
+  .hidden-searchbar{
+    display: none;
+  }
+  .show-mobile{
+    display: block !important; 
+  }
+}
+@media (max-width:360px){
+  .hidden-small-mobile{
+    display: none;
+  }
+}

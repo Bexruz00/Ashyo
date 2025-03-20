@@ -1,4 +1,4 @@
-import { MouseEventHandler, ReactNode } from "react"
+import { ReactNode } from "react"
 
 export interface HeaderTopNavListType {
   id: number,
@@ -7,11 +7,20 @@ export interface HeaderTopNavListType {
   path: string
 } 
 
-export interface ButtonType {
-  exrtaClass?: string,
-  children: ReactNode,
-  icon?: ReactNode,
-  iconPosition?: string,
-  onclick?: MouseEventHandler<HTMLButtonElement>,
-  bage?: number
+export interface HeaderActionsType {
+  id: number;
+  icon: ReactNode;
+  bage: number;
+  className: string;
+}
+
+export interface CategoryType {
+  createdAt: string;
+  icon: string;
+  id: number;
+  image: string;
+  name:string;
+  parentCategoryId: null | number;
+  subCategories: CategoryType[];
+  updatedAt:string;
 }

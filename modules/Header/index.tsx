@@ -1,12 +1,14 @@
 import React from "react";
 import HeaderTop from "./HeaderTop";
-import HeaderSearch from "./HeaderCenter/HeaderSearch";
+import HeaderMobile from "./HeaderMobile";
+import HeaderCenter from "./HeaderCenter";
 
 const Header = () => {
   return (
     <header>
       <HeaderTop />
-      <HeaderSearch/>
+      <HeaderCenter/>
+      <HeaderMobile/>
     </header>
   );
 };
