@@ -1,0 +1,11 @@
+{
+  "HeaderTopNavList": {
+    "about-us": "Biz haqimizda",
+    "products": "Mahsulotlar",
+    "contacts": "Bog'lanish",
+    "tashkent": "Toshkent"
+  },
+  "HeaderSearchContent": {
+    "category": "Kotegoriya"
+  }
+}
