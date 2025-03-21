@@ -8,5 +8,8 @@
   "HeaderCenterContent": {
     "category": "Category",
     "inputPlaceholder":"What are you looking for?"
+  },
+  "HeroContent": {
+    "more": "More"
   }
 }

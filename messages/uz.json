@@ -8,5 +8,8 @@
   "HeaderCenterContent": {
     "category": "Kotegoriya",
     "inputPlaceholder":"Nima qidirmoqdasiz?"
+  },
+  "HeroContent": {
+    "more": "Batafsil"
   }
 }
