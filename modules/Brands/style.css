@@ -52,3 +52,11 @@
   grid-area: k;
   background-color: #ebeff3;
 }
+
+.brand-item{
+  transition-duration: .3s;
+}
+
+.brand-item:hover{
+  transform: scale(1.02);
+}

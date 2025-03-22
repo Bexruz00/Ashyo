@@ -42,7 +42,7 @@ const HeaderTop = () => {
           {navList.map((item:HeaderTopNavListType) => <Link className='flex items-center gap-3 text-[14px] text-[#545D6A] hover:text-[#134E9B] duration-300' key={item.id} href={item.path}><span>{item.icon && item.icon}</span>{item.title}</Link>)}
         </nav>
         <div className='flex items-center gap-[25px]'>
-          <Link className='text-[14px] font-semibold text-[#545D6A] hover:text-[#134E9B] duration-300' href={'tel:+998711234567'}>+998 (71) 123-45-67</Link>
+          <Link className='text-[14px] font-semibold text-[#545D6A] hover:text-[#134E9B] duration-300' href={'tel:+998711234567'}>+998 (93) 874-44-08</Link>
           <LangConfig/>
         </div>
       </div>

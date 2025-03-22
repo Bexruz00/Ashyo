@@ -10,10 +10,10 @@ const Brands = () => {
     const {data:brands, isLoading} = getBrands()
   return (
     <div className='containers !py-[100px] brand-wrapper'>
-        {isLoading ? "Loading..." : brands.map((item:BrandType) => (
+        {isLoading ? "" : brands.map((item:BrandType) => (
             <div key={item.id} className='font-semibold text-[16px] text-[#134E9B] brand-item flex justify-center items-center text-center py-[20px] rounded-[6px]'>
                 {!item.image ? item.name : 
-                <Image className='w-[200px] h-[70px] object-contain' src={`${IMG_API}/${item.image}`} alt='brand img' width={200} height={70} priority/>}
+                <Image className='w-[100px] h-[70px] object-contain' src={`${IMG_API}/${item.image}`} alt='brand img' width={100} height={70} priority/>}
             </div>
         ))}
     </div>
