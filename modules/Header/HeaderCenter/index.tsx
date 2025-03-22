@@ -1,14 +1,17 @@
+"use client"
 import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import React from 'react'
+import React, { useContext } from 'react'
 import HeaderSearch from './HeaderSearch'
 import HeaderActions from './HeaderActions'
 import Button from '@/components/Button'
 import { MenuIcon } from '@/icons'
 import HeaderPopamCategory from './HeaderPopamCategory'
+import { Context } from '@/context/context'
 
 const HeaderCenter = () => {
+    const {setOpenCategory} = useContext(Context)
     const t = useTranslations("HeaderCenterContent")
   return (
     <div className='containers relative flex items-center justify-between !py-[25px] sm:!py-[30px]'>
@@ -19,7 +22,7 @@ const HeaderCenter = () => {
         <HeaderSearch isMobile={true}/>
         <HeaderActions/>
         <Link className='text-[#203F68] hidden-small-mobile sm:hidden font-semibold text-[14px] leading-[130%]' href={`tel:+998711234567`}>+998 (71) 123-45-67</Link>
-        <Button extraClass='!bg-transparent sm:hidden !p-0'> <MenuIcon/></Button>
+        <Button onClick={() => setOpenCategory(true)} extraClass='!bg-transparent sm:hidden !p-0'> <MenuIcon/></Button>
         <HeaderPopamCategory/>
     </div>
   )
