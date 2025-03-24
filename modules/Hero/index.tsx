@@ -16,13 +16,13 @@ import { IMG_API } from '@/hooks/getEnv';
 const Hero = () => {
   const {data:banners} = getBanners()
   const t = useTranslations("HeroContent")
-  
+  // autoplay={{ delay: 2500, disableOnInteraction: false}}
   return (
     <div className='h-[450px] slide__box bg-[#F3F0F0]'>
       <div className='containers'>
-        <Swiper  autoplay={{ delay: 2500, disableOnInteraction: false}} loop={true} pagination={true} modules={[Pagination, Autoplay]} className="mySwiper">
+        <Swiper autoplay={{ delay: 2500, disableOnInteraction: false}} loop={true} pagination={true} modules={[Pagination, Autoplay]} className="mySwiper heroSwipper">
           {banners.map((item:BunnerType) => (
-            <SwiperSlide key={item.id}>
+            <SwiperSlide className='slideBox' key={item.id}>
               <div className='w-[596px] text-start'>
                 <h2 className='slide__title font-bold text-[44px] text-[#0A1729] mb-[6px]'>{item.name}</h2>
                 <p className='slide__subtitle text-[16px] text-[#545D6A] mb-[22px]'>{item.description}</p>

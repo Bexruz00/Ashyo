@@ -1,13 +1,16 @@
 import { instance } from "@/hooks/instange"
 import { useQuery } from "@tanstack/react-query"
 
-const getCategory = () => {
-  const {data = [], isLoading} = useQuery({
-    queryKey:['category-all'],
-    queryFn:() => instance().get("/categories/all", { params:{ limit:1000 }}).then(res => res.data)
-  })
+const getCategory = (count?: number) => {
+  const { data = [], isLoading } = useQuery({
+    queryKey: ['category-all', count],
+    queryFn: async () => {
+      const res = await instance().get("/categories/all", { params: { limit: 1000 } });
+      return count ? res.data.splice(0, count) : res.data;
+    }
+  });
 
-  return {data, isLoading}
+  return { data, isLoading };
 }
 
-export default getCategory
+export default getCategory;

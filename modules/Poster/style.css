@@ -1,0 +1,78 @@
+/* Laptop L */
+@media (max-width: 1199.5px) {
+  .poster__boxImg{
+    left: 0px;
+  }
+
+  .poster__box{
+    padding-right: 0;
+  }
+}
+
+/* Laptop */
+@media (max-width: 991.5px) {
+  .poster__boxImg{
+    left: -50px;
+  }
+
+  .poster__box{
+    margin-top: 50px;
+    padding: 60px 20px 60px 0;
+  }
+
+  .poster__textBox{
+    width: 380px;
+  }
+
+  .poster__img{
+    width: 500px;
+  }
+
+  .poster__title{
+    font-size: 28px;
+  }
+  
+  .poster__btn{
+    width: 120px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 767.5px) {
+  .poster__title{
+    font-size: 22px;
+  }
+  
+  .poster__btn{
+    height: 40px;
+  }
+
+  .poster__img{
+    width: 400px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575.5px) {
+  .poster__boxImg{
+    left: -30px;
+  }
+
+  .poster__title{
+    font-size: 14px;
+  }
+
+  .poster__btn{
+    width: 90px;
+    height: 40px;
+  }
+
+  .poster__img{
+    width: 250px;
+  }
+
+  .poster__box{
+    margin-top: 0px;
+    padding: 20px 20px 20px 0;
+  }
+}

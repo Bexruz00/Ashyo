@@ -53,6 +53,14 @@
   padding: 0 20px;
 }
 
+button{
+  transition: .3s;
+}
+
+button:hover{
+  opacity: .8;
+}
+
 /* Header SearchBar Media */
 @media (max-width:1139px){
   .hidden-searchbar{

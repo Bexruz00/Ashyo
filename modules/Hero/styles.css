@@ -3,7 +3,7 @@
   height: 450px;
 }
 
-.swiper-slide {
+.slideBox {
   text-align: center;
   font-size: 18px;
   display: flex;
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.swiper-slide img {
+.slideBox img {
   display: block;
   width: 100%;
   height: 100%;
@@ -102,12 +102,9 @@
   .slide__box {
     height: 400px;
   }
-
-  .swiper-slide {
+  
+  .slideBox {
     height: 400px;
-  }
-
-  .swiper-slide {
     padding-top: 20px;
     align-items: start;
   }
@@ -116,7 +113,7 @@
     width: 151px;
   }
 
-  .swiper {
+  .heroSwipper {
     max-height: 400px;
   }
 }
@@ -144,11 +141,11 @@
     height: 250px !important;
   }
 
-  .swiper-slide {
+  .slideBox {
     height: 300px;
   }
 
-  .swiper {
+  .heroSwipper {
     max-height: 300px;
   }
 

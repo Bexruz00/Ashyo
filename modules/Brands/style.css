@@ -60,3 +60,30 @@
 .brand-item:hover{
   transform: scale(1.02);
 }
+
+@media (max-width:814px){
+  .brand-wrapper{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 70px);
+      grid-template-areas: 
+          "a b"
+          "i b"
+          "i f"   
+          "c d"
+          "g d"
+          "g k"
+      ;
+  }
+  .brand-item:nth-child(2) > img{
+      transform: scale(1);
+      width: auto;
+      height: auto;
+  }
+  .brand-item:nth-child(1) > img{
+      transform: scale(0.7);
+  }
+  .brand-item:nth-child(8){
+      background-color: #0F4A97;
+      color: white;
+  }
+}

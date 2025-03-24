@@ -11,5 +11,12 @@
   },
   "HeroContent": {
     "more": "More"
+  },
+  "Products":{
+    "secondTitle": "Recently viewed products",
+    "title":"Most popular products",
+    "basket":"Save",
+    "more":"More",
+    "discount":"Discount products"
   }
 }

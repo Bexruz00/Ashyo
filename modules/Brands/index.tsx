@@ -9,7 +9,7 @@ import { IMG_API } from '@/hooks/getEnv'
 const Brands = () => {
     const {data:brands, isLoading} = getBrands()
   return (
-    <div className='containers !py-[100px] brand-wrapper'>
+    <div className='containers !pt-[35px] sm:!pt-[100px] brand-wrapper'>
         {isLoading ? "" : brands.map((item:BrandType) => (
             <div key={item.id} className='font-semibold text-[16px] text-[#134E9B] brand-item flex justify-center items-center text-center py-[20px] rounded-[6px]'>
                 {!item.image ? item.name : 
