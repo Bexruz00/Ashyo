@@ -18,7 +18,7 @@ const DiscountProduct:FC<{title:string}> = ({title}) => {
     return (
         <div className={`products`}>
             <div className="containers">
-                <h2 className='font-bold text-[16px] sm:text-[32px] text-[#000000]'>{title}</h2>
+                <h2 className='font-bold text-[16px] mb-[20px] ms:mb-[0] sm:text-[32px] text-[#000000]'>{title}</h2>
             </div>
             <Swiper
                 loop={true}
@@ -41,7 +41,7 @@ const DiscountProduct:FC<{title:string}> = ({title}) => {
                 pagination={{
                     clickable: true,
                 }}
-                className="mySwiper mt-[20px] sm:mt-[50px]"
+                className="mySwiper sm:mt-[50px]"
             >
                 {products.map((item:ProductType) => <SwiperSlide key={item.id}> <ProductCard item={item}/> </SwiperSlide>)}
             </Swiper>

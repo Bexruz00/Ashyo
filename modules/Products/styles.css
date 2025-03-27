@@ -5,7 +5,6 @@
 .products>.swiper>.swiper-wrapper>.swiper-slide {
   text-align: start;
   font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,12 +35,4 @@
   color: black;
   font-size: 12px;
   font-weight: 800;
-}
-
-/* Mobile */
-@media (max-width: 575.5px) {
-  .swiper-slide{
-    width: 200px !important;
-  } 
-  
 }

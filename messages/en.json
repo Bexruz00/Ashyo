@@ -18,5 +18,44 @@
     "basket":"Save",
     "more":"More",
     "discount":"Discount products"
+  },
+  "Poster":{
+    "music": "You don't have to spend a lot of money to enjoy music!",
+    "exrta": "More"
+  },
+  "Footer":{
+    "icons": "In our social networks",
+    "download": "Download the mobile app",
+    "menu": "Menu",
+    "about-ashyo": "About Ashyo",
+    "tems": "Terms of use",
+    "policy": "Privacy and security policy",
+    "return": "Product and merchandise return policy",
+    "contact-us": "Contact us",
+    "call": "Communication",
+    "question": "Do you have a question?",
+    "opinion": "Ask questions that interest you.",
+    "register": "© 2025 Ashyo is a licensed brand that is fun to use. Developer: B.Bekhruz"
+  },
+  "single":{
+    "price": "Price",
+    "add-cart": "Add to cart",
+    "buy": "Buy",
+    "month": "This per month",
+    "month-pice": "usz",
+    "truk-word":"Delivery throughout Uzbekistan",
+    "market-word": "You can take the store yourself.",
+    "clock-word": "Estimated delivery time is 1 to 3 days......",
+    "phone-work": "Phone features",
+    "opinion-clients": "Customer reviews",
+    "cm-cart": "Number of CIM cards",
+    "bettry": "Battery capacity",
+    "core": "The number of cores",
+    "processor": "Processor",
+    "name": "Evgeniy Viktorovich",
+    "time": "September 3, 2022",
+    "color": "Choose color :",
+    "moreBtn": "More",
+    "review": "The most inconvenient application written with the left heel. The interface is awkward. Putting something up for sale is as difficult as possible. You need to go in the tab in the masonry in the hidden tabs in the buttons. Kick-ass"
   }
 }

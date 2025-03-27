@@ -18,7 +18,7 @@ export default function Home() {
         <Category/>
         <DiscountProduct title={t("discount")}/>
         <Poster/>
-        <Products title={t("secondTitle")} extraClass="hidden md:block"/>
+        <DiscountProduct title={t("secondTitle")}/>
     </>
   );
 }

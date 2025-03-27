@@ -12,5 +12,7 @@ export interface ProductType {
   is_aksiya: boolean,
   image: string,
   createdAt: string,
-  updatedAt: string
+  updatedAt: string,
+  configurations: any[],
+  product: any,
 }

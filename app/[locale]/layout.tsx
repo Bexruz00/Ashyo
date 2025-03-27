@@ -5,6 +5,7 @@ import "./globals.css"
 import Header from '@/modules/Header';
 import ReactQueryProvider from '@/query/ReactQueryProvider';
 import { GlobalContextProvider } from '@/context/context';
+import Footer from '@/modules/Footer';
   
 export default async function LocaleLayout({
   children,
@@ -31,6 +32,7 @@ export default async function LocaleLayout({
             <GlobalContextProvider>
               <Header />
               {children}
+              <Footer/>
             </GlobalContextProvider>
           </ReactQueryProvider>
         </NextIntlClientProvider>

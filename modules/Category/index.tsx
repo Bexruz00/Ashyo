@@ -11,8 +11,6 @@ import Button from '@/components/Button'
 const Category = () => {
     const t = useTranslations("Products")
     const {data:categories} = getCategory(6)
-    console.log(categories);
-    
 
   return (
     <div className='containers !py-[48px] sm:!py-[100px] category'>

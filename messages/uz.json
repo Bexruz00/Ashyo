@@ -18,5 +18,44 @@
     "basket":"Savatcha",
     "more":"Ko’proq",
     "discount":"Aksiyadagi tovarlar"
+  },
+  "Poster":{
+    "music": "Musiqa zavqini his qilish uchun ko'p mablag' sarflash shart emas!",
+    "exrta": "Batafsil"
+  },
+  "Footer":{
+    "icons": "Bizning ijtimoiy tarmoqlarda",
+    "download": "Mobil ilovani yuklab oling",
+    "menu": "Menyu",
+    "about-ashyo": "Ashyo haqida",
+    "tems": "Foydalanish shartlari",
+    "policy": "Maxfiylik va hafsizlik siyosati",
+    "return": "Mahsulotlarni va tovarlarni qaytarish siyosati",
+    "contact-us": "Biz bilan aloqa",
+    "call": "Aloqa",
+    "question": "Savolingiz bormi?",
+    "opinion": " O’zingiz qiziqtirgan savollarni bering",
+    "register": "© 2025 Ashyo ro’hatdan otgan litsenzalangan bu brend. Dasturchi: B.Bexruz"
+  },
+  "single":{
+    "price": "Narxi",
+    "add-cart": "Savatga qo‘shish",
+    "buy": "Xarid qilish",
+    "month": "Oyiga",
+    "month-pice": "uszdan muddatli to’lov",
+    "truk-word":"Yetkazib berish O’zbekiston bo’ylab",
+    "market-word": "Do’kondi o’zidan olib ketishingiz mumkin",
+    "clock-word": "Tahminiy yetkazib berish vaqti 1 kundan 3 kungacha......",
+    "phone-work": "Telfon xususiyatlari",
+    "opinion-clients": "Mijozlarni fikrlari",
+    "cm-cart": "CIM kartalar soni",
+    "bettry": "Akumulyator hajmi",
+    "core": "Yadrolar soni",
+    "processor": "Protsessori",
+    "name": "Evgeniy Viktorovich",
+    "time": "Sentyabr 3, 2022 yil",
+    "color": "Rangini tanlash :",
+    "moreBtn": "Ko’proq",
+    "review": "Chap qo'li bilan yozilgan eng noqulay dastur. Interfeys noqulay. Biror narsani sotuvga qo'yish imkon qadar qiyin. Tugmalardagi yashirin yorliqlardagi duvarcılıkdagi yorliqlarga kirishingiz kerak. Adabini berish; Qoyil"
   }
 }

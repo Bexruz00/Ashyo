@@ -1,4 +1,4 @@
-.swiper {
+.heroSwipper {
   width: 100%;
   height: 450px;
 }
@@ -84,6 +84,10 @@
 
 /* Tablet */
 @media (max-width: 767.5px) {
+  .swiper{
+    height: 400px;
+  }
+
   .slide__title {
     font-size: 30px;
   }

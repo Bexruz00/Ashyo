@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <div className='h-[450px] slide__box bg-[#F3F0F0]'>
       <div className='containers'>
-        <Swiper autoplay={{ delay: 2500, disableOnInteraction: false}} loop={true} pagination={true} modules={[Pagination, Autoplay]} className="mySwiper heroSwipper">
+        <Swiper loop={true} pagination={true} modules={[Pagination, Autoplay]} className="mySwiper heroSwipper">
           {banners.map((item:BunnerType) => (
             <SwiperSlide className='slideBox' key={item.id}>
               <div className='w-[596px] text-start'>
